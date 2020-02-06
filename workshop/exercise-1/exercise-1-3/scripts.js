@@ -33,9 +33,70 @@ link1.setAttribute ("href","https://himym2017.wordpress.com/2017/03/25/the-best-
 link1.innerText = "Source";
 document.getElementById('main').appendChild(link1);
 
-const cssLink = document.createElement('link');
-cssLink.setAttribute('rel', 'stylesheet');
-cssLink.setAttribute('href','styles.css');
-cssLink.setAttribute('class', 'css');
-document.querySelector('head').appendChild(cssLink);
+const body = document.querySelector('body');
+body.style.background = "rgba(246,187,33, .8) url(./images/yellow-umbrella.jpg) no-repeat";
+body.style.backgroundSize = '100%';
+body.style.fontFamily ="'Playfair Display', serif";
 
+const main = document.getElementById('main');
+main.style.background ="#fafafa";
+main.style.borderRadius = '4px';
+main.style.boxShadow ="8px 10px 25px 0 rgba(128, 128, 128, .44)";
+main.style.minWidth = '320px';
+main.style.maxWidth = '600px';
+main.style.margin = '36px';
+main.style.padding = '4px 32px 32px';
+
+header1.style.fontFamily = 'Open Sans', 'sans-serif';
+header1.style.textAlign = 'center';
+
+
+header2.style.fontFamily = 'Open Sans', 'sans-serif';
+header2.style.textAlign = 'left';
+
+paragraph1.style.fontSize = '17px';
+paragraph1.style.lineHeight = '1.5em';
+
+paragraph2.style.fontSize = '17px';
+paragraph2.style.lineHeight = '1.5em';
+
+paragraph3.style.fontSize = '17px';
+paragraph3.style.lineHeight = '1.5em';
+
+paragraph4.style.fontSize = '17px';
+paragraph4.style.lineHeight = '1.5em';
+
+image1.style.border = '#fafafa';
+image1.style.borderRadius = '4px';
+image1.style.boxShadow = "4px 4px 14px rgba(128, 128, 128, .4)";
+image1.style.width = '100%';
+
+link1.style.color = "#174E7C";
+link1.style.display = 'block';
+link1.style.fontWeight = '700';
+link1.style.marginTop = 'auto';
+link1.style.textAlign = 'right';
+link1.style.textDecoration = 'none';
+
+
+
+
+// const cssLink = document.createElement('link');
+// cssLink.setAttribute('rel', 'stylesheet');
+// cssLink.setAttribute('href','styles.css');
+// cssLink.setAttribute('class', 'css');
+// document.querySelector('head').appendChild(cssLink);
+
+// header1.classList.add('headers');
+// header2.classList.add('headers');
+
+// header2.classList.add('h2nd');
+
+// paragraph1.classList.add('par');
+// paragraph2.classList.add('par');
+// paragraph3.classList.add('par');
+// paragraph4.classList.add('par');
+
+// image1.classList.add('images');
+
+// link1.classList.add('links');
