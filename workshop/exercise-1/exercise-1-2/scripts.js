@@ -39,3 +39,16 @@ cssLink.setAttribute('href','styles.css');
 cssLink.setAttribute('class', 'css');
 document.querySelector('head').appendChild(cssLink);
 
+header1.classList.add('headers');
+header2.classList.add('headers');
+
+header2.classList.add('h2nd');
+
+paragraph1.classList.add('par');
+paragraph2.classList.add('par');
+paragraph3.classList.add('par');
+paragraph4.classList.add('par');
+
+image1.classList.add('images');
+
+link1.classList.add('links');

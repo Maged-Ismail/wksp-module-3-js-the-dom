@@ -87,6 +87,12 @@ Instead, we will use these methods
 
 ```js
 // Example
+document.getElementById('my-div');
+document.querySelector('body');
+document.querySelector(".my-class");
+document.querySelector("#my-div");
+document.querySelector("div.bacon >ul");
+document.querySelector("div.bacon ul.list");
 
 ```
 
@@ -100,11 +106,13 @@ Instead, we will use these methods
 
 You can modify the content of a leaf, an end node with 
 
-- [`.innerText()`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
-- [`.innerHTML()`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
+- [`.innerText`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
+- [`.innerHTML`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
 
 ```js
 // Example
+const myTitle = document.getElementById('mt-title');
+myTitle.innerText = 'New Title';
 
 ```
 
@@ -127,6 +135,10 @@ To add a new node to an HTML page, you need to do it in 3 steps.
 
 ```js
 // Example
+const paragraph = document.createElement('p');
+paragraph.innerText = 'New Hacker Right Here';
+document.querySelector('body').appendChild(paragraph);
+paragraph.id ="new-id";
 
 ```
 
@@ -154,8 +166,9 @@ const myDiv = document.getElementById('my-div');
 myDiv.style.background = "purple";
 ```
 
-⚠️ Houston. We have a problem!
+⚠️ Houston. We have a problem! (Dashes! Use camelcase)
 
+ ``` myDiv.style.borderRadius= '23px';
 ---
 
 #### Using `classList`

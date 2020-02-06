@@ -6,6 +6,9 @@
 
 ```js
 // Example
+setTimeout(function(){
+    console.log('Hello');
+}, 3000);
 
 ```
 
@@ -15,6 +18,11 @@
 
 ```js
 // Example
+const myTimer = setInterval(function(){
+    console.log('Here!');
+}, 3000);
+
+clearInterval(myTimer);
 
 ```
 
